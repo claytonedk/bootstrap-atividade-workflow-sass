@@ -1,0 +1,9 @@
+.nav {
+    width: 1000px;
+    margin: auto;
+    border: 1px solid $themeBorderColor;
+    overflow: auto;
+}
+
+@import "./brand.scss";
+@import "./menu.scss";

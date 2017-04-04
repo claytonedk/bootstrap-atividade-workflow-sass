@@ -1,0 +1,6 @@
+@mixin nav-theme {
+    .nav-theme {
+        background: $themeBgColor;
+        color: $themeColor;
+    }
+}

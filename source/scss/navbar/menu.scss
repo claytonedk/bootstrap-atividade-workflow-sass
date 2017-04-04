@@ -1,0 +1,15 @@
+.nav-items {
+    float: left;
+    width: 70%;
+    font-size: $navbarMenuItemFontSize;
+    
+    li {
+        display: inline-block;
+        padding: $navbarMenuItemPadding;
+        
+        &:hover {
+            background-color: $themeHoverBgColor;
+            color: $themeHoverColor;
+        }
+    }
+}

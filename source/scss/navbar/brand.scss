@@ -1,0 +1,14 @@
+.nav-brand {
+    float: left;
+    width: 30%;
+    font-size: $navbarBrandFontSize;
+    font-weight: bold;
+    margin-top: 20px;
+    
+    a {
+        &:hover {
+            background-color: $themeHoverBgColor;
+            color: $themeHoverColor;
+        }
+    }
+}
