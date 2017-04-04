@@ -12,10 +12,16 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('./dist'));
 });
 
+// Task para copiar os arquivos html
+gulp.task("copy-html", function () {
+   return gulp.src("./source/**/*.html")
+        .pipe(gulp.dest("./dist"));
+});
+
 // Task para disparar tarefas caso ocorra alteracoes em arquivos
 gulp.task('sass:watch', function () {
     gulp.watch('./source/scss/**/*.scss', ['sass']);
 });
 
 // Task default para iniciar apenas com o comando "gulp" no terminal
-gulp.task("default", ['sass', 'sass:watch']);
+gulp.task("default", ['sass', 'sass:watch', 'copy-html']);
